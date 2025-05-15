@@ -1,12 +1,44 @@
-# React + Vite
+# Sol Project - Khalid Zaro
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+![Project Preview](assets/preview.gif) <!-- Add a screenshot/GIF if available -->
 
-Currently, two official plugins are available:
+A modern React.js project featuring an animated card slider with responsive design. Built with React, CSS animations, and optimized for performance.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## ✨ Features
 
-## Expanding the ESLint configuration
+- **Smooth Infinite Slider** - CSS-powered auto-scrolling animation
+- **Responsive Design** - Works on mobile, tablet & desktop
+- **Hover Effects** - Interactive card scaling and grayscale transitions
+- **Performance Optimized** - Uses `will-change` and `requestAnimationFrame`
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🚀 Installation
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/khalidzaro/sol.project.khalidzaro.git
+Install dependencies:
+
+bash
+npm install
+Run the development server:
+
+bash
+npm start
+🛠️ Technologies Used
+React.js
+
+CSS3 Animations
+
+Flexbox/Grid Layout
+
+Git Version Control
+
+📂 Project Structure
+sol.project.khalidzaro/
+├── src/
+│   ├── components/      # Reusable components
+│   ├── assets/          # Images and data files
+│   ├── styles/          # CSS files
+│   └── App.js           # Main application
+├── public/
+└── package.json
