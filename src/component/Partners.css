@@ -1,0 +1,41 @@
+.partner-carousel {
+    background: #fff;
+    padding-bottom: 30px;
+  }
+  
+  .partner-card {
+    background: #f8f8f8;
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.05);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .partner-image {
+    width: 900px;
+    height: 700px;
+    margin-bottom: 16px;
+  }
+  
+  .partner-info {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+  
+  .partner-logo {
+    width: 40px;
+    height: auto;
+  }
+  
+  .partner-info h4 {
+    margin: 0;
+    font-size: 1rem;
+    font-weight: 600;
+  }
+  
+  .partner-info p {
+    margin: 2px 0 0;
+    font-size: 0.85rem;
+    color: #555;
+  }

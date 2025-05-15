@@ -1,0 +1,138 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.home-container {
+    padding: 20px;
+    margin: 0 auto;
+    overflow-x: hidden;
+}
+
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin: 10px 0;
+    flex-wrap: wrap;
+}
+
+.header-text {
+    width: 100%;
+    max-width: 600px;
+    font-size: clamp(18px, 4vw, 27px);
+    font-weight: bold;
+    color: rgb(156, 156, 156);
+    line-height: 1.4;
+}
+
+.meImg {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.iconText {
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
+}
+
+.image-wrapper {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.textBlack {
+    color: black;
+    text-decoration: none;
+}
+
+.header-icon img {
+    width: 40px;
+    height: 40px;
+}
+
+/* Slider Styles */
+.slider-wrapper {
+    width: 100%;
+    overflow: hidden;
+    margin-top: 100px;
+    position: relative;
+}
+
+.slider-track {
+    display: flex;
+    gap: 20px;
+    width: max-content;
+    will-change: transform;
+    padding: 10px 0;
+}
+
+.card-item {
+    flex: 0 0 auto;
+    width: 300px;
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.card-item:hover {
+    transform: scale(1.05);
+    filter: grayscale(0) !important;
+    z-index: 10;
+}
+
+.slider-track:hover .card-item:not(:hover) {
+    filter: grayscale(1);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        gap: 20px;
+    }
+    
+    .header-text {
+        width: 100%;
+    }
+    
+    .header-icon {
+        align-self: flex-end;
+    }
+    
+    .slider-wrapper {
+        margin-top: 70px;
+    }
+    
+    .card-item {
+        width: 250px;
+    }
+}
+
+@media (max-width: 480px) {
+    .home-container {
+        padding: 10px;
+    }
+    
+    .header-text h1 {
+        font-size: 18px;
+        line-height: 1.5;
+    }
+    
+    .meImg, .iconText, .header-icon img {
+        width: 30px;
+        height: 30px;
+    }
+    
+    .slider-wrapper {
+        margin-top: 50px;
+    }
+    
+    .card-item {
+        width: 200px;
+    }
+}

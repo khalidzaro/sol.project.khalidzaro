@@ -1,0 +1,255 @@
+/* Base Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Full Width Hero Section */
+.hero {
+  width: 100%;
+  min-height: 100vh;
+  background-color: #f34c1d;
+  color: #1a1a1a;
+  font-family: 'Georgia', serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* Key change - pushes content to bottom */
+  position: relative;
+  overflow-x: hidden;
+  padding: 20px 20px 60px; /* Added bottom padding */
+}
+
+/* Full Width Navigation */
+.nav {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  position: relative;
+  z-index: 100;
+}
+
+.nav-logo {
+  font-size: 1.2rem;
+  color: black;
+  font-weight: bold;
+}
+
+.nav-menu {
+  font-size: 1.5rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: black;
+  z-index: 101;
+}
+
+/* Mobile Menu (Full Screen) */
+.nav-dropdown-custom {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.95);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  z-index: 99;
+}
+
+.nav-links {
+  width: 100%;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.nav-links li {
+  width: 100%;
+  text-align: center;
+}
+
+.nav-links li a {
+  display: inline-block;
+  width: 80%;
+  max-width: 300px;
+  background: #ff4a1c;
+  color: white;
+  text-decoration: none;
+  padding: 15px;
+  border-radius: 999px;
+  font-weight: 600;
+  font-size: 1.1rem;
+}
+
+.nav-close {
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  background: #f2f2f2;
+  border: none;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+/* Hero Content - Positioned at Bottom */
+.hero-content {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  padding: 20px;
+  margin-top: auto; /* Key change - pushes to bottom */
+}
+
+.hero-text {
+  width: 100%;
+}
+
+.hero h1 {
+  width: 100%;
+  font-size: 2rem;
+  line-height: 1.4;
+  font-weight: 500;
+}
+
+/* Hire Box */
+.hire-box {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  border: 1px solid #e0e0e0;
+  padding: 15px;
+  background-color: #fff;
+  gap: 15px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.hire-box-pattern {
+  width: 30px;
+  height: auto;
+}
+
+.hire-box-text {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.hire-box-status {
+  font-size: 0.75rem;
+  color: #888;
+}
+
+.hire-box-role {
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+.hire-box-button {
+  background-color: #f2f2f2;
+  border: none;
+  border-radius: 50%;
+  width: 35px;
+  height: 35px;
+  font-size: 18px;
+  cursor: pointer;
+  flex-shrink: 0;
+}
+
+/* Tablet Styles (768px+) */
+@media (min-width: 768px) {
+  .hero {
+    padding: 20px 40px 60px;
+  }
+
+  .hero-content {
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: space-between;
+    padding: 0 40px;
+    gap: 60px;
+  }
+
+  .hero h1 {
+    font-size: 2.5rem;
+    max-width: 600px;
+    margin-bottom: 40px;
+  }
+
+  .nav-dropdown-custom {
+    width: auto;
+    height: auto;
+    position: absolute;
+    top: 70px;
+    right: 30px;
+    left: auto;
+    background: #ff4a1c;
+    padding: 12px 18px;
+    border-radius: 40px;
+  }
+
+  .nav-links {
+    flex-direction: row;
+    width: auto;
+    gap: 10px;
+  }
+
+  .nav-links li a {
+    width: auto;
+    padding: 8px 16px;
+    font-size: 0.9rem;
+  }
+
+  .nav-close {
+    display: none;
+  }
+
+  .hire-box {
+    width: 350px;
+    margin-left: auto;
+    margin-bottom: 20px;
+  }
+}
+
+/* Desktop Styles (1024px+) */
+@media (min-width: 1024px) {
+  .hero {
+    padding: 20px 60px 80px;
+  }
+
+  .hero-content {
+    padding: 0 60px;
+    max-width: 1400px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .hero h1 {
+    font-size: 3rem;
+    max-width: 800px;
+  }
+
+  .hire-box {
+    position: relative;
+    right: 0;
+    top: 0;
+  }
+}
+
+/* Large Desktop (1200px+) */
+@media (min-width: 1200px) {
+  .hero-content {
+    gap: 100px;
+  }
+}
